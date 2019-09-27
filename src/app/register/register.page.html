@@ -1,0 +1,93 @@
+<ion-content>
+  <div class="container">
+    <div class="register-container">
+      <ion-card class="ion-padding">
+        <ion-card-header>
+          <ion-card-title>Kaydol</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <form [formGroup]="credentials" (keyup.enter)="submit()">
+            <ion-item>
+              <ion-label position="floating">Ad</ion-label>
+              <ion-input
+                required="true"
+                type="text"
+                formControlName="name"
+              ></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Soyad</ion-label>
+              <ion-input
+                required="true"
+                type="text"
+                formControlName="lastName"
+              ></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">TC Kimlik Numarası</ion-label>
+              <ion-input
+                required="true"
+                type="numeric"
+                formControlName="tckn"
+              ></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Şehir</ion-label>
+              <ion-input
+                required="true"
+                type="text"
+                formControlName="city"
+              ></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Kullanıcı Adı</ion-label>
+              <ion-input
+                required="true"
+                type="text"
+                formControlName="username"
+              ></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">E-Mail</ion-label>
+              <ion-input
+                required="true"
+                type="email"
+                formControlName="email"
+              ></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Telefon Numarası</ion-label>
+              <ion-input
+                required="true"
+                type="phone"
+                formControlName="phone"
+              ></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Şifre</ion-label>
+              <ion-input
+                required="true"
+                type="password"
+                formControlName="password"
+              ></ion-input>
+            </ion-item>
+          </form>
+
+          <ion-button
+            class="ion-padding"
+            expand="block"
+            [disabled]="credentials.dirty && credentials.invalid"
+            (click)="submit()"
+            >Kaydol</ion-button
+          >
+        </ion-card-content>
+      </ion-card>
+      <p class="login">
+        Zaten Üye Misiniz?
+        <a routerLink="/login">
+          Giriş Yap
+        </a>
+      </p>
+    </div>
+  </div>
+</ion-content>

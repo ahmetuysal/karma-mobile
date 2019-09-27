@@ -1,0 +1,48 @@
+<ion-content>
+  <div class="container">
+    <div class="login-container">
+      <img src="../../assets/logo.png" class="logo" />
+      <ion-card class="ion-padding">
+        <ion-card-header>
+          <ion-card-title>Giriş Yap</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <form [formGroup]="credentials" (keyup.enter)="submit()">
+            <ion-item>
+              <ion-label position="floating" required="true"
+                >Kullanıcı Adı veya E-Mail</ion-label
+              >
+              <ion-input
+                type="text"
+                formControlName="identifier"
+                required
+              ></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating" required="true">Şifre</ion-label>
+              <ion-input
+                type="password"
+                formControlName="password"
+                required="true"
+              ></ion-input>
+            </ion-item>
+          </form>
+
+          <ion-button
+            class="ion-padding"
+            expand="block"
+            [disabled]="credentials.dirty && credentials.invalid"
+            (click)="submit()"
+            >Giriş Yap</ion-button
+          >
+        </ion-card-content>
+      </ion-card>
+      <p class="create-account">
+        Hesabınız yok mu?
+        <a routerLink="/register">
+          Kaydol
+        </a>
+      </p>
+    </div>
+  </div>
+</ion-content>
