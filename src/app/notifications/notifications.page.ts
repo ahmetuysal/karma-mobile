@@ -33,20 +33,16 @@ export class NotificationsPage implements OnInit {
         title:
           'İrem Canlı Modanisa’daki 2. yılını kutluyor! Ona iyi dileklerini iletmek için tıkla.',
         text: 'Modanisa bildirimi',
-        type: NotificationType.System
+        type: NotificationType.System,
+        isToggled: false
       },
       {
         date: new Date(),
-        image: 'https://i1.sndcdn.com/avatars-000045137497-nsoqu4-t500x500.jpg',
-        title: 'Mısra Şov Yaptı!',
-        text:
-          'Mısra Çok Mutlu :) Baya iyi fazla mutlu, aousgodsufosudfhoıdshoıdsf, afdoguhdofsıughıpofd \n ausgdsaud',
-        type: NotificationType.Customer,
-        isToggled: false
         title: 'Ürünüm zamanında elime ulaştı. Teşekkürler Modanisa!',
         text: 'Müşteri teşekkürü',
         type: NotificationType.Customer,
-        isToggled: false
+        isToggled: false,
+        image: 'https://i1.sndcdn.com/avatars-000045137497-nsoqu4-t500x500.jpg'
       },
       {
         date: new Date(),
@@ -101,7 +97,6 @@ export class NotificationsPage implements OnInit {
 
   toggleExpand(uiNotification: UINotification) {
     uiNotification.isToggled = !uiNotification.isToggled;
-    console.log(uiNotification);
   }
 }
 
