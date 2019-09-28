@@ -11,6 +11,7 @@ const routes: Routes = [
         path: 'individual',
         children: [
           {
+        
             path: '',
             loadChildren: () =>
               import(
