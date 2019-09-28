@@ -25,9 +25,9 @@ const routes: Routes = [
           {
             path: '',
             loadChildren: () =>
-              import(
-                '../individual-leaderboard/individual-leaderboard.module'
-              ).then(m => m.IndividualLeaderboardPageModule)
+              import('../leaderboard-team/leaderboard-team.module').then(
+                m => m.LeaderboardTeamPageModule
+              )
           }
         ]
       },
