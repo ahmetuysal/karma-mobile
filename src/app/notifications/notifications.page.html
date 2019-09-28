@@ -5,7 +5,12 @@
 </ion-header>
 
 <ion-content>
-  <div *ngFor="let item of data" [ngClass]="getColor(item)" class="card">
+  <div
+    *ngFor="let item of data"
+    class="card {{ getColor(item) }}"
+    (click)="toggleExpand(item)"
+    [ngClass]="{ expanded: item.isToggled }"
+  >
     <ion-icon
       [name]="getIcon(item.type)"
       [ngClass]="getIcon(item.type)"

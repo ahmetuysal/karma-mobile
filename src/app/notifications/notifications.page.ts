@@ -7,7 +7,7 @@ import { Notification, NotificationType } from '../../contract';
   styleUrls: ['./notifications.page.scss']
 })
 export class NotificationsPage implements OnInit {
-  data: Notification[];
+  data: UINotification[];
 
   constructor() {
     this.data = [
@@ -16,21 +16,24 @@ export class NotificationsPage implements OnInit {
         image: 'https://i1.sndcdn.com/avatars-000045137497-nsoqu4-t500x500.jpg',
         title: 'Mısra Şov Yaptı!',
         text: 'Mısra Şov Yaptı!',
-        type: NotificationType.Coworker
+        type: NotificationType.Coworker,
+        isToggled: false
       },
       {
         date: new Date(),
         image: 'https://i1.sndcdn.com/avatars-000045137497-nsoqu4-t500x500.jpg',
         title: 'Mısra Şov Yaptı!',
         text: 'Mısra Çok Mutlu :)',
-        type: NotificationType.Customer
+        type: NotificationType.Customer,
+        isToggled: false
       },
       {
         date: new Date(),
         image: 'https://i1.sndcdn.com/avatars-000045137497-nsoqu4-t500x500.jpg',
         title: 'Mısra Şov Yaptı!',
         text: 'Mısra Şov Yaptı!',
-        type: NotificationType.Coworker
+        type: NotificationType.Coworker,
+        isToggled: false
       },
       {
         date: new Date(),
@@ -38,21 +41,24 @@ export class NotificationsPage implements OnInit {
         title: 'Mısra Şov Yaptı!',
         text:
           'Mısra Çok Mutlu :) Baya iyi fazla mutlu, aousgodsufosudfhoıdshoıdsf, afdoguhdofsıughıpofd \n ausgdsaud',
-        type: NotificationType.Customer
+        type: NotificationType.Customer,
+        isToggled: false
       },
       {
         date: new Date(),
         image: 'https://i1.sndcdn.com/avatars-000045137497-nsoqu4-t500x500.jpg',
         title: 'Mısra Şov Yaptı!',
         text: 'Mısra Şov Yaptı!',
-        type: NotificationType.Supervisor
+        type: NotificationType.Supervisor,
+        isToggled: false
       },
       {
         date: new Date(),
         image: 'https://i1.sndcdn.com/avatars-000045137497-nsoqu4-t500x500.jpg',
         title: 'Mısra Şov Yaptı!',
         text: 'Mısra Çok Mutlu :)',
-        type: NotificationType.System
+        type: NotificationType.System,
+        isToggled: false
       }
     ];
   }
@@ -88,4 +94,13 @@ export class NotificationsPage implements OnInit {
         return 'flame';
     }
   }
+
+  toggleExpand(uiNotification: UINotification) {
+    uiNotification.isToggled = !uiNotification.isToggled;
+    console.log(uiNotification);
+  }
+}
+
+class UINotification extends Notification {
+  isToggled = false;
 }
