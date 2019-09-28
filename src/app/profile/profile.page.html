@@ -4,24 +4,21 @@
   </ion-toolbar>
 </ion-header>
 
-
 <ion-content color="secondary">
   <ion-card color="light">
     <ion-card-header>
       <div style="text-align:center">
-        <ion-avatar class="avatar">
-          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"
-            style="text-align: center">
+        <ion-avatar class="item-avatar">
+          <img src="../../assets/ercan_altuğ_yılmaz_kafa.png" style="text-align: center">
         </ion-avatar>
         <ion-card-title>Emrah Kılıç</ion-card-title>
       </div>
       <!-- seviye avatarı -->
       <div style="text-align:center">
         <ion-chip>
-          <ion-avatar>
-            <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
-          </ion-avatar>
-          <ion-label>Seviyen</ion-label>
+          <ion-progress-bar color="tertiary" value="0.5" buffer=".5" reversed="true" width="80%"></ion-progress-bar>
+
+          <ion-label>150/300</ion-label>
           <ion-icon name="color-wand"></ion-icon>
           <!--construct da olabilir-->
         </ion-chip>
@@ -35,36 +32,166 @@
     <ion-card-content>
       <!--ne kadardır, badge, departman-->
       <div stye="text-align:center">
+        <ion-grid>
+          <ion-row class="ion-justify-content-evenly">
+            <!--yıl-->
+            <ion-col size="25%">
+              <ion-row class="ion-justify-content-evenly">
+                <ion-badge color="primary">4</ion-badge>
+              </ion-row>
+              <ion-row class="ion-justify-content-evenly">
+                <div class="badge-text">
+                  Ay
+                </div>
+              </ion-row>
+            </ion-col>
 
-        <ion-row>
-          <ion-col>
-            <!-- <ion-col text-right> -->
-            <!-- <div style="text-align: center"> -->
-            <ion-img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"
-              style="width:30px;height:30px;align-items:center"></ion-img>
-            <ion-label style="text-align:center">Yıl</ion-label>
-            <!-- </div> -->
-            <!-- <ion-button color="primary" fill="clear">Yıl</ion-button> -->
-          </ion-col>
-          <ion-col center>
-            <ion-img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"
-              style="width:30px;height:30px;align-items:center"></ion-img>
-            <ion-label style="text-align:center">Ödüller</ion-label>
-          </ion-col>
-          <!--bir badge seçip göster-->
-          <ion-col>
-            <ion-img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"
-              style="width:30px;height:30px;align-items:center"></ion-img>
-            <ion-label style="text-align:center">Departman</ion-label>
-          </ion-col>
-        </ion-row>
-      </div>
-      <div style="text-align: center">
-        Your short bio
-      </div>
+            <!--ödül-->
+            <ion-col size="25%">
+              <ion-row class="ion-justify-content-evenly">
+                <ion-badge color="primary">10</ion-badge>
+              </ion-row>
+              <ion-row class="ion-justify-content-evenly">
+                <div class="badge-text">
+                  Ödül
+                </div>
+              </ion-row>
+            </ion-col>
 
+            <!--Departman-->
+            <ion-col size="25%">
+              <ion-row class="ion-justify-content-evenly">
+                <ion-badge color="primary">Toplama</ion-badge>
+              </ion-row>
+              <ion-row class="ion-justify-content-evenly">
+                <div class="badge-text">
+                  Departman
+                </div>
+              </ion-row>
+            </ion-col>
+
+          </ion-row>
+        </ion-grid>
+      </div>
+      <div style="text-align: left">
+        Hobilerim: Futbol, basketbol<br>
+        Hayalim: Amerika'ya gitmek
+      </div>
+      <div style="text-align:center">
+        <ion-button fill="clear" color="secondary">
+          Profili düzenle
+        </ion-button>
+      </div>
     </ion-card-content>
 
+  </ion-card>
+
+  <ion-card color="light">
+    <ion-header>
+      6 Rozet
+    </ion-header>
+    <ion-slides>
+      <ion-slide>
+        <ion-grid>
+          <ion-row class="ion-justify-content-evenly">
+            <!--1 badge-->
+            <ion-col>
+              <ion-row class="ion-justify-content-evenly">
+                <img src="../../assets/modanisa_logo.svg" class="slide_img" />
+              </ion-row>
+              <ion-row class="ion-justify-content-evenly">
+                <div class="badge-text">
+                  Badge 1
+                </div>
+              </ion-row>
+            </ion-col>
+
+            <!--1 badge-->
+            <ion-col>
+              <ion-row class="ion-justify-content-evenly">
+                <img src="../../assets/modanisa_logo.svg" class="slide_img" />
+              </ion-row>
+              <ion-row class="ion-justify-content-evenly">
+                <div class="badge-text">
+                  Badge 1
+                </div>
+              </ion-row>
+            </ion-col>
+            <!--1 badge-->
+            <ion-col>
+              <ion-row class="ion-justify-content-evenly">
+                <img src="../../assets/modanisa_logo.svg" class="slide_img" />
+              </ion-row>
+              <ion-row class="ion-justify-content-evenly">
+                <div class="badge-text">
+                  Badge 1
+                </div>
+              </ion-row>
+            </ion-col>
+
+            <!--1 badge-->
+            <ion-col>
+              <ion-row class="ion-justify-content-evenly">
+                <img src="../../assets/modanisa_logo.svg" class="slide_img" />
+              </ion-row>
+              <ion-row class="ion-justify-content-evenly">
+                <div class="badge-text">
+                  Badge 1
+                </div>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+          <ion-row class="ion-justify-content-evenly">
+            <!--1 badge-->
+            <ion-col>
+              <ion-row class="ion-justify-content-evenly">
+                <img src="../../assets/modanisa_logo.svg" class="slide_img" />
+              </ion-row>
+              <ion-row class="ion-justify-content-evenly">
+                <div class="badge-text">
+                  Badge 1
+                </div>
+              </ion-row>
+            </ion-col>
+
+            <!--1 badge-->
+            <ion-col>
+              <ion-row class="ion-justify-content-evenly">
+                <img src="../../assets/modanisa_logo.svg" class="slide_img" />
+              </ion-row>
+              <ion-row class="ion-justify-content-evenly">
+                <div class="badge-text">
+                  Badge 1
+                </div>
+              </ion-row>
+            </ion-col>
+            <!--1 badge-->
+            <ion-col>
+              <ion-row class="ion-justify-content-evenly">
+                
+              </ion-row>
+              <ion-row class="ion-justify-content-evenly">
+                <div class="badge-text">
+                  
+                </div>
+              </ion-row>
+            </ion-col>
+
+            <!--1 badge-->
+            <ion-col>
+              <ion-row class="ion-justify-content-evenly">
+                
+              </ion-row>
+              <ion-row class="ion-justify-content-evenly">
+                <div class="badge-text">
+
+                </div>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-slide>
+    </ion-slides>
   </ion-card>
 
   <ion-card color="light">
@@ -98,36 +225,67 @@
     </ion-slides>
 
   </ion-card>
-  
-  <!--iyiyrumlar-->
-  <ion-card>
+
+  <ion-card color="light">
+    <ion-card-header>Muhtarlık</ion-card-header>
+    <!--vardiyası ve haftalık izinleri, fazla mesai, yıllık izin bakiyesi, avans talebi -->
+    <ion-card>
       <ion-item>
         <ion-thumbnail slot="start">
-            <img src="">
+          
         </ion-thumbnail>
         <div>
-        <ion-label>Ekin Berk Polat</ion-label>
-        <ion-label class="ion-text-wrapper, secondary-label">
-          Hoşgeldin Emrah!
-        </ion-label>
+          <ion-label>Mesai</ion-label>
+          <ion-label class="ion-text-wrapper, secondary-label">
+            01.10.2019'a kadar 07:00-16:30 vardiyası
+          </ion-label>
+        </div>
+        <ion-button fill="outline" slot="end">Cevapla</ion-button>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail slot="start">
+          
+        </ion-thumbnail>
+        <div>
+          <ion-label>Mesai</ion-label>
+          <ion-label class="ion-text-wrapper, secondary-label">
+            01.10.2019'a kadar 07:00-16:30 vardiyası
+          </ion-label>
         </div>
         <ion-button fill="outline" slot="end">Cevapla</ion-button>
       </ion-item>
     </ion-card>
+  </ion-card>
+  <!--iyiyrumlar-->
+  <ion-card>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        
+      </ion-thumbnail>
+      <div>
+        <ion-label>Ekin Berk Polat</ion-label>
+        <ion-label class="ion-text-wrapper, secondary-label">
+          Hoşgeldin Emrah!
+        </ion-label>
+      </div>
+      <ion-button fill="outline" slot="end">Cevapla</ion-button>
+    </ion-item>
+  </ion-card>
   <!--marketten aldığı ürünler ve hedefler yine slide-->
   <ion-card>
-      <ion-item>
-        <ion-thumbnail slot="start">
-            <img src="">
-        </ion-thumbnail>
-        <div>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        
+      </ion-thumbnail>
+      <div>
         <ion-label>Ödül ismi</ion-label>
-        <ion-label class="ion-text-wrapper, secondary-label">
+        <ion-label text-wrap class="secondary-label">
           Bu ödülü 06.09.2019 tarihinde kazandın.
         </ion-label>
-        </div>
-        <ion-button fill="outline" slot="end">Detaylar</ion-button>
-      </ion-item>
-    </ion-card>
+      </div>
+      <ion-button fill="outline" slot="end">Detaylar</ion-button>
+    </ion-item>
+  </ion-card>
 
 </ion-content>
