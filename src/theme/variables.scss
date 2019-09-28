@@ -1,14 +1,23 @@
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
 
+@font-face {
+  font-family: '04b03';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/04b03.ttf');
+}
+
 /** Ionic CSS Variables **/
 :root {
+  --ion-font-family: '04b03';
+
   --ion-color-primary: #e84c3d;
   --ion-color-primary-rgb: 232, 76, 61;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
   --ion-color-primary-shade: #cc4336;
-  --ion-color-primary-tint: #ea5e50;
+  --ion-color-primary-tint: #e08279;
 
   --ion-color-secondary: #f39c10;
   --ion-color-secondary-rgb: 243, 156, 16;
@@ -59,8 +68,8 @@
   --ion-color-medium-shade: #86888f;
   --ion-color-medium-tint: #a2a4ab;
 
-  --ion-color-light: #f4f5f8;
-  --ion-color-light-rgb: 244, 244, 244;
+  --ion-color-light: #ffffff;
+  --ion-color-light-rgb: 255, 255, 255;
   --ion-color-light-contrast: #000000;
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
