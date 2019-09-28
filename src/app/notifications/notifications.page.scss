@@ -7,6 +7,35 @@
   padding-top: 16px;
   padding-bottom: 12px;
 
+  .separator {
+    height: 0px;
+    width: 0px;
+    background: #333;
+    margin-bottom: 4px;
+    /* Set our transitions up. */
+    -webkit-transition: height 0.6s;
+    -moz-transition: height 0.6s;
+    transition: height 0.6s;
+    -webkit-transition: width 0.6s;
+    -moz-transition: width 0.6s;
+    transition: width 0.6s;
+  }
+
+  .hidden {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    align-items: center;
+  }
+
+  .image {
+    width: 0px;
+    /* Set our transitions up. */
+    -webkit-transition: width 0.6s;
+    -moz-transition: width 0.6s;
+    transition: width 0.6s;
+  }
+
   ion-icon {
     font-size: 26px;
     flex-shrink: 0;
@@ -23,6 +52,7 @@
     .card-title {
       display: flex;
       align-items: center;
+      margin-bottom: -24px;
 
       h2 {
         margin: 0px 0px 4px 0px;
@@ -37,6 +67,17 @@
         flex-grow: 1;
       }
     }
+  }
+}
+
+.card:hover {
+  .image {
+    width: 100%;
+  }
+  .separator {
+    margin-top: 24px;
+    height: 1.25px;
+    width: 100%;
   }
 }
 
