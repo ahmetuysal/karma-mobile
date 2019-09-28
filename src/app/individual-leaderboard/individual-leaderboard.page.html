@@ -1,9 +1,116 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>individual-leaderboard</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-
+<ion-content class="page">
+  <div class="nes-container with-title container is-rounded">
+    <p class="title">Altın Lig</p>
+    <div class="winners">
+      <div class="first nes-container is-rounded p4">
+        <img src="../../assets/kafalar/kafa_8.png" class="kafa" />
+        <h4>Mehmet Özyürek</h4>
+        <h5>1235213 XP</h5>
+      </div>
+      <div class="runner-ups">
+        <div class="second nes-container is-rounded p4">
+          <img src="../../assets/kafalar/kafa_3.png" class="kafa" />
+          <div>
+            <h4>Emre Sarı</h4>
+            <h5>935213 XP</h5>
+          </div>
+        </div>
+        <div class="third nes-container is-rounded p4">
+          <img src="../../assets/kafalar/kafa_5.png" class="kafa" />
+          <div>
+            <h4>Emrah Öz</h4>
+            <h5>785213 XP</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div scrolly="true" class="scroll">
+      <ion-list class="list">
+        <div
+          *ngFor="let item of goldRest; let i = index"
+          class="nes-container is-rounded p4 rest"
+        >
+          <h4>{{ i + 4 }}. {{ item.name }}</h4>
+          <span class="spacer"></span>
+          <h5>{{ item.exp }} XP</h5>
+        </div>
+      </ion-list>
+    </div>
+  </div>
+  <div class="nes-container with-title container is-rounded">
+    <p class="title">Altın Lig</p>
+    <div class="winners">
+      <div class="first nes-container is-rounded p4">
+        <img src="../../assets/kafalar/kafa_8.png" class="kafa" />
+        <h4>Mehmet Özyürek</h4>
+        <h5>1235213 XP</h5>
+      </div>
+      <div class="runner-ups">
+        <div class="second nes-container is-rounded p4">
+          <img src="../../assets/kafalar/kafa_3.png" class="kafa" />
+          <div>
+            <h4>Emre Sarı</h4>
+            <h5>935213 XP</h5>
+          </div>
+        </div>
+        <div class="third nes-container is-rounded p4">
+          <img src="../../assets/kafalar/kafa_5.png" class="kafa" />
+          <div>
+            <h4>Emrah Öz</h4>
+            <h5>785213 XP</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div scrolly="true" class="scroll">
+      <ion-list class="list">
+        <div
+          *ngFor="let item of goldRest; let i = index"
+          class="nes-container is-rounded p4 rest"
+        >
+          <h4>{{ i + 4 }}. {{ item.name }}</h4>
+          <span class="spacer"></span>
+          <h5>{{ item.exp }} XP</h5>
+        </div>
+      </ion-list>
+    </div>
+  </div>
+  <div class="nes-container with-title container is-rounded">
+    <p class="title">Altın Lig</p>
+    <div class="winners">
+      <div class="first nes-container is-rounded p4">
+        <img src="../../assets/kafalar/kafa_8.png" class="kafa" />
+        <h4>Mehmet Özyürek</h4>
+        <h5>1235213 XP</h5>
+      </div>
+      <div class="runner-ups">
+        <div class="second nes-container is-rounded p4">
+          <img src="../../assets/kafalar/kafa_3.png" class="kafa" />
+          <div>
+            <h4>Emre Sarı</h4>
+            <h5>935213 XP</h5>
+          </div>
+        </div>
+        <div class="third nes-container is-rounded p4">
+          <img src="../../assets/kafalar/kafa_5.png" class="kafa" />
+          <div>
+            <h4>Emrah Öz</h4>
+            <h5>785213 XP</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div scrolly="true" class="scroll">
+      <ion-list class="list">
+        <div
+          *ngFor="let item of goldRest; let i = index"
+          class="nes-container is-rounded p4 rest"
+        >
+          <h4>{{ i + 4 }}. {{ item.name }}</h4>
+          <span class="spacer"></span>
+          <h5>{{ item.exp }} XP</h5>
+        </div>
+      </ion-list>
+    </div>
+  </div>
 </ion-content>
