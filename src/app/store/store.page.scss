@@ -1,0 +1,32 @@
+.slide {
+  height: 55%;
+}
+
+.new {
+  background: #9c3c33;
+}
+
+.popular {
+  background: #ee8278;
+}
+
+.secondary-label {
+  color: gray;
+}
+
+.swiper-slide {
+  flex-direction: column;
+}
+
+.card-title {
+  margin-top: 5px;
+  margin-left: 10px;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.slide-image {
+  display: block;
+  width: auto;
+  height: 80%;
+}
