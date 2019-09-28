@@ -1,8 +1,45 @@
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
 
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/Raleway-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: normal;
+  src: url('../assets/fonts/Raleway-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: bold;
+  src: url('../assets/fonts/Raleway-BoldItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: bold;
+  font-weight: normal;
+  src: url('../assets/fonts/Raleway-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../assets/fonts/Raleway-SemiBold.ttf');
+}
+
 /** Ionic CSS Variables **/
 :root {
+  --ion-font-family: 'Raleway';
+
   --ion-color-primary: #e84c3d;
   --ion-color-primary-rgb: 232, 76, 61;
   --ion-color-primary-contrast: #ffffff;
