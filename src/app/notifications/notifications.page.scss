@@ -44,6 +44,7 @@
   .card-text {
     flex-grow: 1;
     margin-left: 8px;
+    font-size: 12px;
     p {
       margin: 0px;
       color: #666;
@@ -52,7 +53,7 @@
     .card-title {
       display: flex;
       align-items: center;
-      margin-bottom: -24px;
+      margin-bottom: -18px;
 
       h2 {
         margin: 0px 0px 4px 0px;
@@ -60,6 +61,7 @@
       }
 
       h3 {
+        font-size: 14pt;
         margin: 0px;
       }
 
