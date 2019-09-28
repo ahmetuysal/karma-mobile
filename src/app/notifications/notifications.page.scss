@@ -1,0 +1,72 @@
+.card {
+  margin: 8px;
+  display: flex;
+  border-radius: 8px;
+  padding-left: 8px;
+  padding-right: 12px;
+  padding-top: 16px;
+  padding-bottom: 12px;
+
+  ion-icon {
+    font-size: 26px;
+    flex-shrink: 0;
+  }
+
+  .card-text {
+    flex-grow: 1;
+    margin-left: 8px;
+    p {
+      margin: 0px;
+      color: #666;
+    }
+
+    .card-title {
+      display: flex;
+      align-items: center;
+
+      h2 {
+        margin: 0px 0px 4px 0px;
+        color: #333;
+      }
+
+      h3 {
+        margin: 0px;
+      }
+
+      .spacer {
+        flex-grow: 1;
+      }
+    }
+  }
+}
+
+.system {
+  background: #bbbbbb;
+}
+
+.supervisor {
+  background: #ea5e50;
+}
+
+.coworker {
+  background: #f39c10;
+}
+
+.customer {
+  background: #23b574;
+}
+
+.heart {
+  color: #ff0040;
+}
+
+.bowtie {
+  color: #2a3b75;
+}
+
+.pulse {
+}
+
+.flame {
+  color: #fc5305;
+}

@@ -1,9 +1,24 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>notifications</ion-title>
+    <ion-title>Bildirimlerim</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <div *ngFor="let item of data" [ngClass]="getColor(item)" class="card">
+    <ion-icon
+      [name]="getIcon(item.type)"
+      [ngClass]="getIcon(item.type)"
+    ></ion-icon>
+    <div class="card-text">
+      <div class="card-title">
+        <h2>
+          {{ item.title }}
+        </h2>
+        <span class="spacer"></span>
+        <h3>{{ item.date | date: 'h:mm' }}</h3>
+      </div>
+      <p>{{ item.text }}</p>
+    </div>
+  </div>
 </ion-content>
