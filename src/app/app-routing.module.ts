@@ -15,7 +15,8 @@ const routes: Routes = [
     path: 'login',
     loadChildren: () =>
       import('./login/login.module').then(m => m.LoginPageModule)
-  }
+  },
+  { path: 'emotion', loadChildren: './emotion/emotion.module#EmotionPageModule' }
 ];
 @NgModule({
   imports: [
