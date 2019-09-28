@@ -20,7 +20,7 @@
 
           <ion-label>150/300</ion-label>
           <ion-icon name="color-wand"></ion-icon>
-          <!--construct da olabilir-->
+          <!--construct dsa olabilir-->
         </ion-chip>
       </div>
 
@@ -97,11 +97,11 @@
             <!--1 badge-->
             <ion-col>
               <ion-row class="ion-justify-content-evenly">
-                <img src="../../assets/modanisa_logo.svg" class="slide_img" />
+                <ion-icon name="bicycle"></ion-icon>
               </ion-row>
               <ion-row class="ion-justify-content-evenly">
                 <div class="badge-text">
-                  Badge 1
+                  Maraton
                 </div>
               </ion-row>
             </ion-col>
@@ -109,22 +109,22 @@
             <!--1 badge-->
             <ion-col>
               <ion-row class="ion-justify-content-evenly">
-                <img src="../../assets/modanisa_logo.svg" class="slide_img" />
+                <ion-icon name="bulb"></ion-icon>
               </ion-row>
               <ion-row class="ion-justify-content-evenly">
                 <div class="badge-text">
-                  Badge 1
+                  Harika Fikirler
                 </div>
               </ion-row>
             </ion-col>
             <!--1 badge-->
             <ion-col>
               <ion-row class="ion-justify-content-evenly">
-                <img src="../../assets/modanisa_logo.svg" class="slide_img" />
+                <ion-icon name="contacts"></ion-icon>
               </ion-row>
               <ion-row class="ion-justify-content-evenly">
                 <div class="badge-text">
-                  Badge 1
+                  Sosyal
                 </div>
               </ion-row>
             </ion-col>
@@ -132,11 +132,11 @@
             <!--1 badge-->
             <ion-col>
               <ion-row class="ion-justify-content-evenly">
-                <img src="../../assets/modanisa_logo.svg" class="slide_img" />
+                <ion-icon name="hammer"></ion-icon>
               </ion-row>
               <ion-row class="ion-justify-content-evenly">
                 <div class="badge-text">
-                  Badge 1
+                  İş Güvenliği Bilgesi
                 </div>
               </ion-row>
             </ion-col>
@@ -145,11 +145,11 @@
             <!--1 badge-->
             <ion-col>
               <ion-row class="ion-justify-content-evenly">
-                <img src="../../assets/modanisa_logo.svg" class="slide_img" />
+                <ion-icon name="ribbon"></ion-icon>
               </ion-row>
               <ion-row class="ion-justify-content-evenly">
                 <div class="badge-text">
-                  Badge 1
+                  Fevkalede Performans
                 </div>
               </ion-row>
             </ion-col>
@@ -157,22 +157,22 @@
             <!--1 badge-->
             <ion-col>
               <ion-row class="ion-justify-content-evenly">
-                <img src="../../assets/modanisa_logo.svg" class="slide_img" />
+                <ion-icon name="rocket"></ion-icon>
               </ion-row>
               <ion-row class="ion-justify-content-evenly">
                 <div class="badge-text">
-                  Badge 1
+                  Uçuyor
                 </div>
               </ion-row>
             </ion-col>
             <!--1 badge-->
             <ion-col>
               <ion-row class="ion-justify-content-evenly">
-                
+
               </ion-row>
               <ion-row class="ion-justify-content-evenly">
                 <div class="badge-text">
-                  
+
                 </div>
               </ion-row>
             </ion-col>
@@ -180,7 +180,7 @@
             <!--1 badge-->
             <ion-col>
               <ion-row class="ion-justify-content-evenly">
-                
+
               </ion-row>
               <ion-row class="ion-justify-content-evenly">
                 <div class="badge-text">
@@ -193,7 +193,7 @@
       </ion-slide>
     </ion-slides>
   </ion-card>
-
+  <!--değerlendirmeler-->
   <ion-card color="light">
     <ion-slides>
       <ion-slide>
@@ -229,39 +229,62 @@
   <ion-card color="light">
     <ion-card-header>Muhtarlık</ion-card-header>
     <!--vardiyası ve haftalık izinleri, fazla mesai, yıllık izin bakiyesi, avans talebi -->
-    <ion-card>
-      <ion-item>
-        <ion-thumbnail slot="start">
-          
-        </ion-thumbnail>
-        <div>
-          <ion-label>Mesai</ion-label>
-          <ion-label class="ion-text-wrapper, secondary-label">
-            01.10.2019'a kadar 07:00-16:30 vardiyası
-          </ion-label>
-        </div>
-        <ion-button fill="outline" slot="end">Cevapla</ion-button>
-      </ion-item>
+    <ion-slides>
+      <ion-slide>
+        <ion-item>
+          <div>
+            <ion-label>Haftalık Koşu Saatleri</ion-label>
+            <ion-label class="ion-text-wrapper, secondary-label">
+              <ion-badge color="secondary">23</ion-badge>
+              <ion-badge color="secondary">24</ion-badge>
+              <ion-badge color="tertiary">25</ion-badge>
+              <ion-badge color="secondary">26</ion-badge>
+              <ion-badge color="secondary">27</ion-badge>
+              <ion-badge color="secondary">28</ion-badge>
+              <ion-badge color="tertiary">29</ion-badge><br>
+              01.10.2019'a kadar 07:00-16:30 vardiyasındasın.<br>
+              İzin seçmek için sağa kaydır.
+            </ion-label>
+          </div>
+        </ion-item>
+      </ion-slide>
+      <ion-slide>
+        <ion-item>
+          <ion-label>GG AA YY</ion-label>
+          <ion-datetime displayFormat="DD MM YY" placeholder="Tarih Seçin"></ion-datetime>
+          <ion-button fill="outline" slot="end">İzin Bileti Al</ion-button>
+        </ion-item>
+      </ion-slide>
+    </ion-slides>
 
-      <ion-item>
-        <ion-thumbnail slot="start">
-          
-        </ion-thumbnail>
-        <div>
-          <ion-label>Mesai</ion-label>
-          <ion-label class="ion-text-wrapper, secondary-label">
-            01.10.2019'a kadar 07:00-16:30 vardiyası
-          </ion-label>
-        </div>
-        <ion-button fill="outline" slot="end">Cevapla</ion-button>
-      </ion-item>
-    </ion-card>
+    <ion-slides>
+      <ion-slide>
+        <ion-item>
+          <div>
+            <ion-label>Yıllık İzin Bakiyem</ion-label>
+            <ion-label class="ion-text-wrapper, secondary-label">
+              31.12.2019'a kadar 5 gün iznin kaldı.<br>
+              İzin talebi doldurmak için sağa kaydır.
+            </ion-label>
+            <ion-progress-bar color="tertiary" value="0.5" buffer=".5" reversed="false" width="80%"></ion-progress-bar>
+
+          </div>
+        </ion-item>
+      </ion-slide>
+      <ion-slide>
+        <ion-item>
+          <ion-datetime displayFormat="DD MM YY" placeholder="Başlangıç"></ion-datetime> 
+          <ion-datetime displayFormat="DD MM YY" placeholder="Bitiş"></ion-datetime>
+          <ion-button fill="outline" slot="end">İzin Talebi</ion-button>
+        </ion-item>
+      </ion-slide>
+    </ion-slides>
   </ion-card>
   <!--iyiyrumlar-->
   <ion-card>
     <ion-item>
       <ion-thumbnail slot="start">
-        
+
       </ion-thumbnail>
       <div>
         <ion-label>Ekin Berk Polat</ion-label>
@@ -274,18 +297,23 @@
   </ion-card>
   <!--marketten aldığı ürünler ve hedefler yine slide-->
   <ion-card>
-    <ion-item>
-      <ion-thumbnail slot="start">
-        
-      </ion-thumbnail>
-      <div>
-        <ion-label>Ödül ismi</ion-label>
-        <ion-label text-wrap class="secondary-label">
-          Bu ödülü 06.09.2019 tarihinde kazandın.
-        </ion-label>
-      </div>
-      <ion-button fill="outline" slot="end">Detaylar</ion-button>
-    </ion-item>
+    <ion-slides>
+      <ion-slide>
+        <ion-item>
+          <ion-thumbnail slot="start">
+
+          </ion-thumbnail>
+          <div>
+            <ion-label>Ödül ismi</ion-label>
+            <ion-label text-wrap class="secondary-label">
+              Bu ödülü 06.09.2019 tarihinde kazandın.
+            </ion-label>
+          </div>
+          <ion-button fill="outline" slot="end">Detaylar</ion-button>
+        </ion-item>
+      </ion-slide>
+
+    </ion-slides>
   </ion-card>
 
 </ion-content>
