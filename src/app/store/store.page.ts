@@ -19,19 +19,22 @@ export class StorePage implements OnInit {
         title: 'Office Eğitim Programı',
         detail: '2 günlük Microsoft office eğitim programı',
         price: 1500,
-        image: '../../assets/market_resimleri/4.a.microsoft_egitimi.jpg'
+        image: '../../assets/market_resimleri/4.a.microsoft_egitimi.jpg',
+        progress: 0.5
       },
       {
         title: 'Masaj Kuponu',
         detail: '',
         price: 34,
-        image: '../../assets/market_resimleri/4.b.Kişisel_Gelişim_Zirvesi.jpg'
+        image: '../../assets/market_resimleri/4.b.Kişisel_Gelişim_Zirvesi.jpg',
+        progress: 0.1
       },
       {
         title: 'Esnek İzin Günü',
         detail: 'Haftalık izin gününü sen belirle.',
         price: 60,
         image: '../../assets/market_resimleri/4.b.Kişisel_Gelişim_Zirvesi.jpg',
+        progress: 0.3,
         quests: [
           {
             title: 'İstikrar',
@@ -49,7 +52,8 @@ export class StorePage implements OnInit {
         title: 'Uludağ Kayak Tatili',
         detail: 'Uludağda ailenizle birlikte rüya gibi bir hafta geçirin.',
         price: 400,
-        image: '../../assets/market_resimleri/4.b.Kişisel_Gelişim_Zirvesi.jpg'
+        image: '../../assets/market_resimleri/4.b.Kişisel_Gelişim_Zirvesi.jpg',
+        progress: 0.1
       }
     ];
     this.popularPrizes = [
@@ -57,25 +61,29 @@ export class StorePage implements OnInit {
         title: 'Sinema Bileti',
         detail: 'Bütün Çiçek Sinemalarında geçerlidir.',
         price: 140,
-        image: '../../assets/market_resimleri/1.Sinema_Bileti.jpg'
+        image: '../../assets/market_resimleri/1.Sinema_Bileti.jpg',
+        progress: 0.6
       },
       {
         title: 'Alışveriş Çeki',
         detail: 'Modanisa’da geçerli 30 TL değerinde para puan.',
         price: 180,
-        image: '../../assets/market_resimleri/2.alisveris_ceki.jpg'
+        image: '../../assets/market_resimleri/2.alisveris_ceki.jpg',
+        progress: 0.8
       },
       {
         title: 'Market Kuponu',
         detail: 'Şok Marketler’de geçerli 50 tl değerinde para puan.',
         price: 300,
-        image: '../../assets/market_resimleri/3.Market_kuponu.jpg'
+        image: '../../assets/market_resimleri/3.Market_kuponu.jpg',
+        progress: 0.75
       },
       {
         title: 'Esnek İzin Günü',
         detail: 'Haftalık izin gününü sen belirle.',
         price: 60,
         image: '../../assets/market_resimleri/4.b.Kişisel_Gelişim_Zirvesi.jpg',
+        progress: 0.1,
         quests: [
           {
             title: 'İstikrar',
@@ -93,7 +101,8 @@ export class StorePage implements OnInit {
         title: 'Uludağ Kayak Tatili',
         detail: 'Uludağda ailenizle birlikte rüya gibi bir hafta geçirin.',
         price: 400,
-        image: '../../assets/market_resimleri/4.b.Kişisel_Gelişim_Zirvesi.jpg'
+        image: '../../assets/market_resimleri/4.b.Kişisel_Gelişim_Zirvesi.jpg',
+        progress: 0.1
       }
     ];
   }

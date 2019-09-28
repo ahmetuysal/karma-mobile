@@ -6,4 +6,5 @@ export class Prize {
   price: number;
   image: string;
   quests?: Quest[];
+  progress: number;
 }
