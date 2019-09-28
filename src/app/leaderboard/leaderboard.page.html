@@ -1,9 +1,20 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>leaderboard</ion-title>
+    <ion-title>Lider Tablosu</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-tabs>
+    <ion-tab-bar slot="top">
+      <ion-tab-button tab="individual" (click)="clickTab($event, 'individual')">
+        <ion-icon name="information-circle"></ion-icon>
+        <ion-label>Bireysel</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="team" (click)="clickTab($event, 'team')">
+        <ion-icon name="information-circle"></ion-icon>
+        <ion-label>Takım</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
 </ion-content>
