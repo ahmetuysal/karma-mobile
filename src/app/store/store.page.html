@@ -1,11 +1,11 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Ödül Dükkanı</ion-title>
+    <ion-title>Pazar</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content color="primary">
-  <ion-card color="light" class="slide">
+  <ion-card class="nes-container is-rounded no-padding slide" color="light">
     <ion-slides>
       <ion-slide>
         <ion-label style="margin-top: 10px; color:dodgerblue; font-size: 10pt"
@@ -61,53 +61,19 @@
   <ion-card class="new">
     <ion-card-title class="card-title">Yeni Ödüller</ion-card-title>
 
-    <ion-card color="light">
+    <ion-card
+      *ngFor="let new of newPrizes"
+      class="nes-container is-rounded no-padding"
+      color="light"
+    >
       <ion-item>
         <ion-thumbnail slot="start">
-          <img
-            src="../../assets/market_resimleri/4.b.Kişisel_Gelişim_Zirvesi.jpg"
-          />
+          <img [src]="new.image" />
         </ion-thumbnail>
-        <div>
-          <ion-label>ion-item in a card, icon left, button right</ion-label>
-          <ion-label class="secondary-label"
-            >ion-item in a card, icon left, button right</ion-label
-          >
+        <div class="mt-16">
+          <ion-label>{{ new.title }}</ion-label>
+          <p class="secondary-label">{{ new.detail }}</p>
         </div>
-
-        <ion-button fill="outline" slot="end">View</ion-button>
-      </ion-item>
-    </ion-card>
-
-    <ion-card color="light">
-      <ion-item>
-        <ion-thumbnail slot="start">
-          <img src="../../assets/market_resimleri/5.Kitap_Kuponu.jpg" />
-        </ion-thumbnail>
-        <div>
-          <ion-label>ion-item in a card, icon left, button right</ion-label>
-          <ion-label class="secondary-label"
-            >ion-item in a card, icon left, button right</ion-label
-          >
-        </div>
-
-        <ion-button fill="outline" slot="end">View</ion-button>
-      </ion-item>
-    </ion-card>
-
-    <ion-card color="light">
-      <ion-item>
-        <ion-thumbnail slot="start">
-          <img src="../../assets/market_resimleri/6.Taraftar__desteği.jpg" />
-        </ion-thumbnail>
-        <div>
-          <ion-label>ion-item in a card, icon left, button right</ion-label>
-          <ion-label class="secondary-label"
-            >ion-item in a card, icon left, button right</ion-label
-          >
-        </div>
-
-        <ion-button fill="outline" slot="end">View</ion-button>
       </ion-item>
     </ion-card>
   </ion-card>
@@ -115,51 +81,19 @@
   <ion-card class="popular">
     <ion-card-title class="card-title">Popüler Ödüller</ion-card-title>
 
-    <ion-card color="light">
+    <ion-card
+      *ngFor="let new of popularPrizes"
+      class="nes-container is-rounded no-padding"
+      color="light"
+    >
       <ion-item>
         <ion-thumbnail slot="start">
-          <img src="../../assets/market_resimleri/7.Esnek_İzin_günü.jpg" />
+          <img [src]="new.image" />
         </ion-thumbnail>
-        <div>
-          <ion-label>ion-item in a card, icon left, button right</ion-label>
-          <ion-label class="secondary-label"
-            >ion-item in a card, icon left, button right</ion-label
-          >
+        <div class="mt-16">
+          <ion-label>{{ new.title }}</ion-label>
+          <p class="secondary-label">{{ new.detail }}</p>
         </div>
-
-        <ion-button fill="outline" slot="end">View</ion-button>
-      </ion-item>
-    </ion-card>
-
-    <ion-card color="light">
-      <ion-item>
-        <ion-thumbnail slot="start">
-          <img src="../../assets/market_resimleri/8.Esnek_yıllık_izin.jpg" />
-        </ion-thumbnail>
-        <div>
-          <ion-label>ion-item in a card, icon left, button right</ion-label>
-          <ion-label class="secondary-label"
-            >ion-item in a card, icon left, button right</ion-label
-          >
-        </div>
-
-        <ion-button fill="outline" slot="end">View</ion-button>
-      </ion-item>
-    </ion-card>
-
-    <ion-card color="light">
-      <ion-item>
-        <ion-thumbnail slot="start">
-          <img src="../../assets/market_resimleri/10.tiyatro_bileti.jpg" />
-        </ion-thumbnail>
-        <div>
-          <ion-label>ion-item in a card, icon left, button right</ion-label>
-          <ion-label class="secondary-label"
-            >ion-item in a card, icon left, button right</ion-label
-          >
-        </div>
-
-        <ion-button fill="outline" slot="end">View</ion-button>
       </ion-item>
     </ion-card>
   </ion-card>
