@@ -7,7 +7,7 @@
 <ion-content>
   <div
     *ngFor="let item of data"
-    class="card {{ getColor(item) }}"
+    class="card nes-container is-rounded {{ getColor(item) }}"
     (click)="toggleExpand(item)"
     [ngClass]="{ expanded: item.isToggled }"
   >
