@@ -14,6 +14,7 @@ import { IonicStorageModule } from '@ionic/storage';
 import { HttpClientModule } from '@angular/common/http';
 import localeTr from '@angular/common/locales/tr';
 import { registerLocaleData } from '@angular/common';
+import { EmotionPage } from './emotion/emotion.page';
 
 registerLocaleData(localeTr);
 

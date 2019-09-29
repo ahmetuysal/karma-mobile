@@ -6,6 +6,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { HomePage } from './home.page';
+import { EmotionPage } from '../emotion/emotion.page';
+import { EmotionPageModule } from '../emotion/emotion.module';
 
 const routes: Routes = [
   {
@@ -19,8 +21,10 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    EmotionPageModule
   ],
+  entryComponents: [EmotionPage],
   declarations: [HomePage]
 })
 export class HomePageModule {}

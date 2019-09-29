@@ -1,0 +1,22 @@
+.container {
+  padding: 12px;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../assets/tugla.jpg');
+  background-size: cover;
+}
+h1,
+h2 {
+  color: rgb(244, 248, 253);
+
+  text-shadow: -3px 3px 0 #000, 3px 3px 0 #000, 3px -3px 0 #000,
+    -3px -3px 0 #000;
+}
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  button {
+    margin: 12px;
+  }
+}

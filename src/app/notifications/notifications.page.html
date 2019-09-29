@@ -9,7 +9,7 @@
     *ngFor="let item of data"
     class="card nes-container is-rounded {{ getColor(item) }}"
     (click)="toggleExpand(item)"
-    [ngClass]="{ expanded: item.isToggled }"
+    [ngClass]="{ expanded: item.isToggled, 'with-image': item.image }"
   >
     <ion-icon
       [name]="getIcon(item.type)"
@@ -23,7 +23,7 @@
         <span class="spacer"></span>
         <h3>{{ item.date | date: 'h:mm' }}</h3>
       </div>
-      <div class="hidden">
+      <div class="hidden" *ngIf="item.image">
         <div class="separator"></div>
         <img [src]="item.image" class="image" />
       </div>

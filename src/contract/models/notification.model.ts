@@ -5,5 +5,5 @@ export class Notification {
   date: Date;
   title: string;
   text: string;
-  image: string;
+  image?: string;
 }
