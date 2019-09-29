@@ -4,8 +4,33 @@
     color:gray;
 }
 
+.bio {
+    margin-top:7px;
+    margin-left: 10px;
+    text-align: left; 
+    font-size: 14px;
+}
+.card
+{
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    margin-top: 10px !important;
+     margin-bottom: 7px !important;
+}
+
+.card-title {
+    margin-top: 2px;
+    margin-left: 10px;
+    color: white;
+    margin-bottom:5px;
+  }
+
 ion-icon {
     font-size: 40px; //Preferred size here
+}
+
+ion-list {
+    font-size: 12px;
 }
 
 .item-avatar  {    
@@ -16,6 +41,10 @@ ion-icon {
     max-width: 100px !important;  //any size
     max-height: 100px !important; //any size 
     }
+
+    .no-padding {
+        padding: 0;
+      }
 
 .slide_img{
     text-align: center;
