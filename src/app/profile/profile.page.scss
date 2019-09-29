@@ -4,6 +4,12 @@
     color:gray;
 }
 
+.bio {
+    margin-top:7px;
+    margin-left: 10px;
+    text-align: left; 
+    font-size: 14px;
+}
 .card
 {
     margin-left: 10px !important;
@@ -21,6 +27,10 @@
 
 ion-icon {
     font-size: 40px; //Preferred size here
+}
+
+ion-list {
+    font-size: 12px;
 }
 
 .item-avatar  {    
