@@ -13,6 +13,14 @@ export class NotificationsPage implements OnInit {
     this.data = [
       {
         date: new Date(),
+        title: 'Ustalığa terfi ettin!',
+        text: 'Köyüne haber sal.',
+        image: '../../assets/ercan_altug_yilmaz_kafa.png',
+        type: NotificationType.System,
+        isToggled: false
+      },
+      {
+        date: new Date(),
         title: 'Yeni pozisyonun için tebrik ederim!',
         text: 'Gül Polat seni kutladı',
         type: NotificationType.Coworker,

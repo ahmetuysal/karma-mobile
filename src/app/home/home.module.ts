@@ -10,6 +10,8 @@ import { EmotionPage } from '../emotion/emotion.page';
 import { EmotionPageModule } from '../emotion/emotion.module';
 import { TrainingPageModule } from '../training/training.module';
 import { TrainingPage } from '../training/training.page';
+import { JourneyPage } from '../journey/journey.page';
+import { JourneyPageModule } from '../journey/journey.module';
 
 const routes: Routes = [
   {
@@ -25,9 +27,10 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes),
     EmotionPageModule,
-    TrainingPageModule
+    TrainingPageModule,
+    JourneyPageModule
   ],
-  entryComponents: [EmotionPage, TrainingPage],
+  entryComponents: [EmotionPage, TrainingPage, JourneyPage],
   declarations: [HomePage]
 })
 export class HomePageModule {}
