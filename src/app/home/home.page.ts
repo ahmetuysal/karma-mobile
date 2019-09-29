@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { EmotionPage } from '../emotion/emotion.page';
+import { TrainingPage } from '../training/training.page';
 
 @Component({
   selector: 'app-home',
@@ -26,5 +27,13 @@ export class HomePage implements OnInit {
         });
       });
     }, 2000);
+  }
+
+  async openTraining() {
+    const modal = await this.modalController.create({
+      component: TrainingPage
+    });
+
+    modal.present();
   }
 }

@@ -4,6 +4,15 @@
   background-image: url('../../assets/koy.png');
   background-size: cover;
 
+  .ant-button {
+    position: absolute;
+    top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+
   .adam {
     width: 20%;
     position: absolute;
