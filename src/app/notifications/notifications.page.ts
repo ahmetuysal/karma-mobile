@@ -13,7 +13,6 @@ export class NotificationsPage implements OnInit {
     this.data = [
       {
         date: new Date(),
-        image: 'https://i1.sndcdn.com/avatars-000045137497-nsoqu4-t500x500.jpg',
         title: 'Yeni pozisyonun için tebrik ederim!',
         text: 'Gül Polat seni kutladı',
         type: NotificationType.Coworker,
@@ -21,17 +20,18 @@ export class NotificationsPage implements OnInit {
       },
       {
         date: new Date(),
-        image: 'https://i1.sndcdn.com/avatars-000045137497-nsoqu4-t500x500.jpg',
-        title: 'Ürün güzel paketlenmişti. Emeği gelen herkese teşekkürler',
+        image: '../../assets/musteri.jpg',
+        title:
+          'Ürün güzel paketlenmişti. Çok yakıştı. Emeği gelen herkese teşekkürler',
         text: 'Müşteri teşekkürü',
         type: NotificationType.Customer,
         isToggled: false
       },
       {
         date: new Date(),
-        image: 'https://i1.sndcdn.com/avatars-000045137497-nsoqu4-t500x500.jpg',
+        image: '../../assets/kafalar/kafa_10.png',
         title:
-          'İrem Canlı Modanisa’daki 2. yılını kutluyor! Ona iyi dileklerini iletmek için tıkla.',
+          'Hasan Canlı Modanisa’daki 2. yılını kutluyor! Ona iyi dileklerini iletmek için tıkla.',
         text: 'Modanisa bildirimi',
         type: NotificationType.System,
         isToggled: false
@@ -41,12 +41,10 @@ export class NotificationsPage implements OnInit {
         title: 'Ürünüm zamanında elime ulaştı. Teşekkürler Modanisa!',
         text: 'Müşteri teşekkürü',
         type: NotificationType.Customer,
-        isToggled: false,
-        image: 'https://i1.sndcdn.com/avatars-000045137497-nsoqu4-t500x500.jpg'
+        isToggled: false
       },
       {
         date: new Date(),
-        image: 'https://i1.sndcdn.com/avatars-000045137497-nsoqu4-t500x500.jpg',
         title: 'Bu haftaki hedefini aşan Karanfil takımını tebrik ederim.',
         text: 'Yönetici tebriği',
         type: NotificationType.Supervisor,
@@ -54,7 +52,6 @@ export class NotificationsPage implements OnInit {
       },
       {
         date: new Date(),
-        image: 'https://i1.sndcdn.com/avatars-000045137497-nsoqu4-t500x500.jpg',
         title: 'Tebrikler çaylak, bir sonraki lige çok yaklaştın, hadi! ',
         text: 'Modanisa bildirimi',
         type: NotificationType.System,
