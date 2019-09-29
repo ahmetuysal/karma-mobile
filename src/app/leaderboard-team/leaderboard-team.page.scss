@@ -16,3 +16,97 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+.page {
+  box-sizing: border-box;
+}
+
+.scroll {
+  max-height: 200px;
+  overflow: hidden;
+  position: relative;
+  overflow-y: auto;
+}
+
+.p4 {
+  padding: 4px;
+}
+
+h4,
+h5 {
+  margin: 0;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+.list {
+  padding: 0;
+}
+
+.container {
+  margin: 8px;
+  padding-top: 1rem;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  .title {
+    margin-bottom: 0;
+  }
+
+  .rest {
+    display: flex;
+  }
+
+  .winners {
+    display: flex;
+    .first {
+      width: 50%;
+      background: gold;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .kafa {
+        width: 60%;
+      }
+    }
+    .runner-ups {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      .kafa {
+        width: 33%;
+        position: relative;
+        left: -6px;
+        flex-shrink: 0;
+      }
+
+      .second {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgb(150, 150, 150);
+      }
+
+      .third {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #c0860a;
+      }
+    }
+  }
+}
+.goldleague {
+  background: #f5e392;
+}
+.silverleague {
+  background: #c5c5c5;
+}
+.bronzeleague {
+  background: #ffb77c;
+}
