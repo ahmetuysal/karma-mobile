@@ -9,20 +9,26 @@
     <ion-card-header>
       <div style="text-align:center">
         <ion-avatar class="item-avatar">
-          <img src="../../assets/ercan_altug_yilmaz_kafa.png" style="text-align: center">
+          <img
+            src="../../assets/ercan_altug_yilmaz_kafa.png"
+            style="text-align: center"
+          />
         </ion-avatar>
         <ion-card-title>Altuğ Yılmaz</ion-card-title>
       </div>
       <!-- seviye avatarı -->
 
       <div style="text-align:center">
-        <ion-label color="primary">Seviyen: 4</ion-label><br>
+        <ion-label color="primary">Seviyen: 4</ion-label><br />
         <ion-label color="primary">Bir sonraki seviye için</ion-label>
       </div>
-      <ion-progress-bar color="tertiary" value="0.5" buffer="0.4" class="level-progress"></ion-progress-bar>
-
+      <ion-progress-bar
+        color="tertiary"
+        value="0.5"
+        buffer="0.4"
+        class="level-progress"
+      ></ion-progress-bar>
     </ion-card-header>
-
 
     <!--summary-->
     <ion-card-content>
@@ -65,43 +71,42 @@
                 </div>
               </ion-row>
             </ion-col>
-
           </ion-row>
         </ion-grid>
       </div>
-            <div style="text-align:center">
+      <div style="text-align:center">
         <ion-button fill="clear" color="primary">
           Profili düzenle
         </ion-button>
       </div>
     </ion-card-content>
-
   </ion-card>
-<ion-card class="nes-container is-rounded no-padding card" color="light">
-    <div class="bio" >
-        Efsanem: Gonca Dalgıç<br>
-        Hobilerim: Futbol, basketbol<br>
-        Hayalim: İngilizce öğrenmek<br>
-      </div>
-      <div class="bio">
-        Hedeflerim:
-        <ion-list>
-          <ion-item>
-            <ion-icon name="star"></ion-icon>
-            <ion-label text-wrap>Takımımla ilk 3'e girmek</ion-label>
-          </ion-item>
-          <ion-item>
-            <ion-icon name="star-half"></ion-icon>
-            <ion-label text-wrap>10 tebrik mesajı göndermek ve almak</ion-label>
-          </ion-item>
-          <ion-item>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-label text-wrap>Departmanımla ilgili bir öneride bulunmak</ion-label>
-          </ion-item>
-        </ion-list>
-
-      </div>
-</ion-card>
+  <ion-card class="nes-container is-rounded no-padding card" color="light">
+    <div class="bio">
+      Efsanem: Gonca Dalgıç<br />
+      Hobilerim: Futbol, basketbol<br />
+      Hayalim: İngilizce öğrenmek<br />
+    </div>
+    <div class="bio">
+      Hedeflerim:
+      <ion-list>
+        <ion-item>
+          <ion-icon name="star"></ion-icon>
+          <ion-label text-wrap>Takımımla ilk 3'e girmek</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="star-half"></ion-icon>
+          <ion-label text-wrap>10 tebrik mesajı göndermek ve almak</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-label text-wrap
+            >Departmanımla ilgili bir öneride bulunmak</ion-label
+          >
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-card>
   <ion-card class="nes-container is-rounded no-padding card" color="light">
     <ion-header>
       6 Rozet
@@ -213,11 +218,15 @@
   <!--dahil olduğu takımlar, logo, isim, -->
   <ion-card class="nes-container is-rounded no-padding card" color="light">
     <ion-card-title class="card-title">En İyi 5 Ekibin</ion-card-title>
-    <ion-card-subtitle class="card-title">Takımlarını görmek için kaydır.</ion-card-subtitle>
+    <ion-card-subtitle class="card-title"
+      >Takımlarını görmek için kaydır.</ion-card-subtitle
+    >
     <ion-slides>
       <ion-slide *ngFor="let new of newTeams">
-
-        <ion-card class="nes-container is-rounded no-padding card" color="light">
+        <ion-card
+          class="nes-container is-rounded no-padding card"
+          color="light"
+        >
           <ion-item>
             <ion-thumbnail slot="start">
               <img [src]="new.logo" style="height:75%" />
@@ -234,49 +243,61 @@
   </ion-card>
   <!--devam eden eğitimler-->
   <ion-card class="nes-container is-rounded no-padding card" color="light">
-      <ion-card-title class="card-title">Devam Eden Eğitimler</ion-card-title>
-  
-      <ion-card-subtitle class="card-title">Eğitimlerini görmek için kaydır.</ion-card-subtitle>
-      <ion-slides>
-        <ion-slide *ngFor="let new of ongoingCourses">
-  
-          <ion-card class="nes-container is-rounded no-padding card" color="light">
-            <ion-item>
-              <ion-thumbnail slot="start">
-                <ion-icon [name]="new.logo"></ion-icon>
-              </ion-thumbnail>
-              <div class="mt-16">
-                <ion-label>{{ new.title }}</ion-label>
-                <p class="secondary-label">Başlama Tarihi {{ new.completed_at }}</p>
-              </div>
-            </ion-item>
-          </ion-card>
-        </ion-slide>
-      </ion-slides>
-    </ion-card>
-<!--tamamladığı eğitimler-->
-<ion-card class="nes-container is-rounded no-padding card" color="light">
-    <ion-card-title class="card-title">Tamamladığın Eğitimler</ion-card-title>
+    <ion-card-title class="card-title">Devam Eden Eğitimler</ion-card-title>
 
-    <ion-card-subtitle class="card-title">Eğitimlerini görmek için kaydır.</ion-card-subtitle>
+    <ion-card-subtitle class="card-title"
+      >Eğitimlerini görmek için kaydır.</ion-card-subtitle
+    >
     <ion-slides>
-      <ion-slide *ngFor="let new of newCourses">
-
-        <ion-card class="nes-container is-rounded no-padding card" color="light">
+      <ion-slide *ngFor="let new of ongoingCourses">
+        <ion-card
+          class="nes-container is-rounded no-padding card"
+          color="light"
+        >
           <ion-item>
             <ion-thumbnail slot="start">
               <ion-icon [name]="new.logo"></ion-icon>
             </ion-thumbnail>
             <div class="mt-16">
               <ion-label>{{ new.title }}</ion-label>
-              <p class="secondary-label">Tamamlama Tarihi {{ new.completed_at }}</p>
+              <p class="secondary-label">
+                Başlama Tarihi {{ new.completed_at }}
+              </p>
             </div>
           </ion-item>
         </ion-card>
       </ion-slide>
     </ion-slides>
   </ion-card>
-  
+  <!--tamamladığı eğitimler-->
+  <ion-card class="nes-container is-rounded no-padding card" color="light">
+    <ion-card-title class="card-title">Tamamladığın Eğitimler</ion-card-title>
+
+    <ion-card-subtitle class="card-title"
+      >Eğitimlerini görmek için kaydır.</ion-card-subtitle
+    >
+    <ion-slides>
+      <ion-slide *ngFor="let new of newCourses">
+        <ion-card
+          class="nes-container is-rounded no-padding card"
+          color="light"
+        >
+          <ion-item>
+            <ion-thumbnail slot="start">
+              <ion-icon [name]="new.logo"></ion-icon>
+            </ion-thumbnail>
+            <div class="mt-16">
+              <ion-label>{{ new.title }}</ion-label>
+              <p class="secondary-label">
+                Tamamlama Tarihi {{ new.completed_at }}
+              </p>
+            </div>
+          </ion-item>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </ion-card>
+
   <ion-card class="nes-container is-rounded no-padding card" color="light">
     <ion-card-header>Muhtarlık</ion-card-header>
     <!--vardiyası ve haftalık izinleri, fazla mesai, yıllık izin bakiyesi, avans talebi -->
@@ -292,8 +313,8 @@
               <ion-badge color="secondary">26</ion-badge>
               <ion-badge color="secondary">27</ion-badge>
               <ion-badge color="secondary">28</ion-badge>
-              <ion-badge color="tertiary">29</ion-badge><br>
-              01.10.2019'a kadar 07:00-16:30 vardiyasındasın.<br>
+              <ion-badge color="tertiary">29</ion-badge><br />
+              01.10.2019'a kadar 07:00-16:30 vardiyasındasın.<br />
               İzin seçmek için sağa kaydır.
             </ion-label>
           </div>
@@ -302,7 +323,10 @@
       <ion-slide>
         <ion-item>
           <ion-label>GG AA YY</ion-label>
-          <ion-datetime displayFormat="DD MM YY" placeholder="Tarih Seçin"></ion-datetime>
+          <ion-datetime
+            displayFormat="DD MM YY"
+            placeholder="Tarih Seçin"
+          ></ion-datetime>
           <ion-button fill="outline" slot="end">İzin Bileti Al</ion-button>
         </ion-item>
       </ion-slide>
@@ -314,17 +338,29 @@
           <div>
             <ion-label>Yıllık İzin Bakiyem</ion-label>
             <ion-label class="ion-text-wrapper, secondary-label">
-              31.12.2019'a kadar 5 gün iznin kaldı.<br>
+              31.12.2019'a kadar 5 gün iznin kaldı.<br />
               İzin talebi doldurmak için sağa kaydır.
             </ion-label>
-            <ion-progress-bar color="tertiary" value="0.5" buffer=".5" reversed="false" width="80%"></ion-progress-bar>
+            <ion-progress-bar
+              color="tertiary"
+              value="0.5"
+              buffer=".5"
+              reversed="false"
+              width="80%"
+            ></ion-progress-bar>
           </div>
         </ion-item>
       </ion-slide>
       <ion-slide>
         <ion-item>
-          <ion-datetime displayFormat="DD MM YY" placeholder="Başlangıç"></ion-datetime>
-          <ion-datetime displayFormat="DD MM YY" placeholder="Bitiş"></ion-datetime>
+          <ion-datetime
+            displayFormat="DD MM YY"
+            placeholder="Başlangıç"
+          ></ion-datetime>
+          <ion-datetime
+            displayFormat="DD MM YY"
+            placeholder="Bitiş"
+          ></ion-datetime>
           <ion-button fill="outline" slot="end">İzin Talebi</ion-button>
         </ion-item>
       </ion-slide>
@@ -363,9 +399,6 @@
           <img src="../../assets/profile/performans.png" />
         </div>
       </ion-slide>
-
     </ion-slides>
-
   </ion-card>
-
 </ion-content>
