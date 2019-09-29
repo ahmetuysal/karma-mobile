@@ -5,44 +5,79 @@
 </ion-header>
 
 <ion-content color="primary">
-  <ion-card class="nes-container is-rounded no-padding slide" color="light">
+  <ion-card
+    class="nes-container is-rounded no-padding slide"
+    color="light"
+    style="height:auto"
+  >
     <ion-slides>
       <ion-slide>
-        <ion-label style="margin-top: 10px; color:dodgerblue; font-size: 10pt">Eğitim</ion-label>
+        <ion-label style="margin-top: 10px; color:dodgerblue; font-size: 10pt"
+          >Eğitim</ion-label
+        >
         <ion-label>Piksel Akademi</ion-label>
-        <ion-label class="secondary-label" style="font-size: 13pt" slot="start">Geleceğini renklendir!</ion-label>
+        <ion-label class="secondary-label" style="font-size: 13pt" slot="start"
+          >Geleceğini renklendir!</ion-label
+        >
         <div class="slide-image">
-          <img src="../../assets/market_resimleri/13.Piksel_Akademi.png" style="height:100%; width: 100%; object-fit: contain"/>
+          <img
+            src="../../assets/market_resimleri/13.Piksel_Akademi.png"
+            style="height:100%; width: 100%; object-fit: contain"
+          />
         </div>
       </ion-slide>
       <ion-slide>
-        <ion-label style="margin-top: 10px; color:dodgerblue; font-size: 10pt">Popüler</ion-label>
+        <ion-label style="margin-top: 10px; color:dodgerblue; font-size: 10pt"
+          >Popüler</ion-label
+        >
         <ion-label>Sinema Bileti</ion-label>
-        <ion-label class="secondary-label" style="font-size: 13pt" slot="start"></ion-label>
+        <ion-label
+          class="secondary-label"
+          style="font-size: 13pt"
+          slot="start"
+        ></ion-label>
         <div class="slide-image">
           <img src="../../assets/market_resimleri/1.Sinema_Bileti.jpg" />
         </div>
       </ion-slide>
       <ion-slide>
-        <ion-label style="margin-top: 10px; color:dodgerblue; font-size: 10pt">Özel</ion-label>
+        <ion-label style="margin-top: 10px; color:dodgerblue; font-size: 10pt"
+          >Özel</ion-label
+        >
         <ion-label>Aile Boyu</ion-label>
-        <ion-label class="secondary-label" style="font-size: 13pt" slot="start"></ion-label>
+        <ion-label
+          class="secondary-label"
+          style="font-size: 13pt"
+          slot="start"
+        ></ion-label>
         <div class="slide-image">
           <img src="../../assets/market_resimleri/2.alisveris_ceki.jpg" />
         </div>
       </ion-slide>
       <ion-slide>
-        <ion-label style="margin-top: 10px; color:dodgerblue; font-size: 10pt">Özel</ion-label>
+        <ion-label style="margin-top: 10px; color:dodgerblue; font-size: 10pt"
+          >Özel</ion-label
+        >
         <ion-label>Market Kuponu</ion-label>
-        <ion-label class="secondary-label" style="font-size: 13pt" slot="start"></ion-label>
+        <ion-label
+          class="secondary-label"
+          style="font-size: 13pt"
+          slot="start"
+        ></ion-label>
         <div class="slide-image">
           <img src="../../assets/market_resimleri/3.Market_kuponu.jpg" />
         </div>
       </ion-slide>
       <ion-slide>
-        <ion-label style="margin-top: 10px; color:dodgerblue; font-size: 10pt">Popüler</ion-label>
+        <ion-label style="margin-top: 10px; color:dodgerblue; font-size: 10pt"
+          >Popüler</ion-label
+        >
         <ion-label>Microsoft Office Eğitimi</ion-label>
-        <ion-label class="secondary-label" style="font-size: 13pt" slot="start"></ion-label>
+        <ion-label
+          class="secondary-label"
+          style="font-size: 13pt"
+          slot="start"
+        ></ion-label>
         <div class="slide-image">
           <img src="../../assets/market_resimleri/4.a.microsoft_egitimi.jpg" />
         </div>
@@ -53,7 +88,11 @@
   <ion-card class="new">
     <ion-card-title class="card-title">Yeni Ödüller</ion-card-title>
 
-    <ion-card *ngFor="let new of newPrizes" class="nes-container is-rounded no-padding" color="light">
+    <ion-card
+      *ngFor="let new of newPrizes"
+      class="nes-container is-rounded no-padding"
+      color="light"
+    >
       <ion-item>
         <ion-thumbnail slot="start">
           <img [src]="new.image" />
@@ -61,7 +100,11 @@
         <div class="mt-16">
           <ion-label>{{ new.title }}</ion-label>
           <p class="secondary-label">{{ new.detail }}</p>
-          <ion-progress-bar color="tertiary" [value]="new.progress" ></ion-progress-bar><br>
+          <ion-progress-bar
+            color="tertiary"
+            [value]="new.progress"
+          ></ion-progress-bar
+          ><br />
         </div>
       </ion-item>
     </ion-card>
@@ -70,7 +113,11 @@
   <ion-card class="popular">
     <ion-card-title class="card-title">Popüler Ödüller</ion-card-title>
 
-    <ion-card *ngFor="let new of popularPrizes" class="nes-container is-rounded no-padding" color="light">
+    <ion-card
+      *ngFor="let new of popularPrizes"
+      class="nes-container is-rounded no-padding"
+      color="light"
+    >
       <ion-item>
         <ion-thumbnail slot="start">
           <img [src]="new.image" />
@@ -78,7 +125,11 @@
         <div class="mt-16">
           <ion-label>{{ new.title }}</ion-label>
           <p class="secondary-label">{{ new.detail }}</p>
-          <ion-progress-bar color="tertiary" [value]="new.progress" ></ion-progress-bar><br>
+          <ion-progress-bar
+            color="tertiary"
+            [value]="new.progress"
+          ></ion-progress-bar
+          ><br />
         </div>
       </ion-item>
     </ion-card>
