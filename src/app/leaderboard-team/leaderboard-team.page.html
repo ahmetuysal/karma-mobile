@@ -1,24 +1,116 @@
-<ion-content>
-  <ion-card class="new" style="max-width: 30%">
-    <ion-card-title class="card-title">Yeni Ödüller</ion-card-title>
-    <ion-item>
-      <ion-card color="light">
-        <ion-item>
-          <ion-thumbnail slot="start">
-            <img
-              src="../../assets/market_resimleri/4.b.Kişisel_Gelişim_Zirvesi.jpg"
-            />
-          </ion-thumbnail>
+<ion-content class="page">
+  <div class="nes-container with-title container is-rounded">
+    <p class="title">Altın Lig</p>
+    <div class="winners">
+      <div class="first nes-container is-rounded p4">
+        <img src="../../assets/evler/ev_1.png" class="kafa" />
+        <h4>Karma</h4>
+        <h5>1235213 XP</h5>
+      </div>
+      <div class="runner-ups">
+        <div class="second nes-container is-rounded p4">
+          <img src="../../assets/evler/ev_10.png" class="kafa" />
           <div>
-            <ion-label>ion-item in a card, icon left, button right</ion-label>
-            <ion-label class="secondary-label"
-              >ion-item in a card, icon left, button right</ion-label
-            >
+            <h4>Hayalet</h4>
+            <h5>935213 XP</h5>
           </div>
-
-          <ion-button fill="outline" slot="end">View</ion-button>
-        </ion-item>
-      </ion-card>
-    </ion-item>
-  </ion-card>
+        </div>
+        <div class="third nes-container is-rounded p4">
+          <img src="../../assets/evler/ev_3.png" class="kafa" />
+          <div>
+            <h4>Böcük</h4>
+            <h5>785213 XP</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div scrolly="true" class="scroll">
+      <ion-list class="list">
+        <div
+          *ngFor="let item of goldRest; let i = index"
+          class="nes-container is-rounded p4 rest"
+        >
+          <h4>{{ i + 4 }}. {{ item.name }}</h4>
+          <span class="spacer"></span>
+          <h5>{{ item.exp }} XP</h5>
+        </div>
+      </ion-list>
+    </div>
+  </div>
+  <div class="nes-container with-title container is-rounded">
+    <p class="title">Gümüş Lig</p>
+    <div class="winners">
+      <div class="first nes-container is-rounded p4">
+        <img src="../../assets/evler/ev_4.png" class="kafa" />
+        <h4>Hızlı ve Öfkeli</h4>
+        <h5>1235213 XP</h5>
+      </div>
+      <div class="runner-ups">
+        <div class="second nes-container is-rounded p4">
+          <img src="../../assets/evler/ev_5" class="kafa" />
+          <div>
+            <h4>Kampüs</h4>
+            <h5>935213 XP</h5>
+          </div>
+        </div>
+        <div class="third nes-container is-rounded p4">
+          <img src="../../assets/evler/ev_6.png" class="kafa" />
+          <div>
+            <h4>Hızlılar</h4>
+            <h5>785213 XP</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div scrolly="true" class="scroll">
+      <ion-list class="list">
+        <div
+          *ngFor="let item of goldRest; let i = index"
+          class="nes-container is-rounded p4 rest"
+        >
+          <h4>{{ i + 4 }}. {{ item.name }}</h4>
+          <span class="spacer"></span>
+          <h5>{{ item.exp }} XP</h5>
+        </div>
+      </ion-list>
+    </div>
+  </div>
+  <div class="nes-container with-title container is-rounded">
+    <p class="title">Bronz Lig</p>
+    <div class="winners">
+      <div class="first nes-container is-rounded p4">
+        <img src="../../assets/evler/ev_7.png" class="kafa" />
+        <h4>Başkanlar</h4>
+        <h5>1235213 XP</h5>
+      </div>
+      <div class="runner-ups">
+        <div class="second nes-container is-rounded p4">
+          <img src="../../assets/evler/ev_8.png" class="kafa" />
+          <div>
+            <h4>Koşucular</h4>
+            <h5>935213 XP</h5>
+          </div>
+        </div>
+        <div class="third nes-container is-rounded p4">
+          <img src="../../assets/evler/ev_12.png" class="kafa" />
+          <div>
+            <h4>İyi Ekip</h4>
+            <h5>785213 XP</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div scrolly="true" class="scroll">
+      <ion-list class="list">
+        <div
+          *ngFor="let item of goldRest; let i = index"
+          class="nes-container is-rounded p4 rest"
+        >
+          <h4>{{ i + 4 }}. {{ item.name }}</h4>
+          <span class="spacer"></span>
+          <h5>{{ item.exp }} XP</h5>
+        </div>
+      </ion-list>
+    </div>
+  </div>
 </ion-content>
