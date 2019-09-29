@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { EmotionPage } from '../emotion/emotion.page';
 
@@ -8,15 +8,23 @@ import { EmotionPage } from '../emotion/emotion.page';
   styleUrls: ['./home.page.scss']
 })
 export class HomePage implements OnInit {
+  @ViewChild('balloon', { static: false }) balloon: ElementRef<HTMLDivElement>;
+
   constructor(public modalController: ModalController) {}
 
   ngOnInit() {
-    setTimeout(() => {
-      console.log('hello');
-      const modal = this.modalController.create({
-        component: EmotionPage
-      });
-      return modal.then(m => m.present());
+    const modal = this.modalController.create({
+      component: EmotionPage
     });
+    setTimeout(() => {
+      return modal.then(m => {
+        m.present();
+        m.onWillDismiss().then(result => {
+          console.log(result);
+          const feeling = result.data.feeling || 'Köyde havalar çok güzel!';
+          this.balloon.nativeElement.innerText = feeling;
+        });
+      });
+    }, 2000);
   }
 }

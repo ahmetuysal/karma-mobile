@@ -7,11 +7,12 @@ import { ModalController } from '@ionic/angular';
   styleUrls: ['./emotion.page.scss']
 })
 export class EmotionPage implements OnInit {
+  feeling: string;
   constructor(public modalController: ModalController) {}
 
   ngOnInit() {}
 
   submit() {
-    this.modalController.dismiss();
+    this.modalController.dismiss({ feeling: this.feeling });
   }
 }

@@ -2,7 +2,11 @@
   <div class="container">
     <h1>Merhaba Altuğ!</h1>
     <h2>Bugün Nasılsın?</h2>
-    <textarea id="textarea_field" class="nes-textarea"></textarea>
+    <textarea
+      id="textarea_field"
+      class="nes-textarea"
+      [(ngModel)]="feeling"
+    ></textarea>
     <div class="options">
       <button type="button" class="nes-btn is-success" (click)="submit()">
         <img
