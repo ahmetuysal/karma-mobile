@@ -22,7 +22,9 @@ export class HomePage implements OnInit {
         m.present();
         m.onWillDismiss().then(result => {
           console.log(result);
-          const feeling = result.data.feeling || 'Köyde havalar çok güzel!';
+          const feeling =
+            (result.data || { feeling: null }).feeling ||
+            'Köyde havalar çok güzel!';
           this.balloon.nativeElement.innerText = feeling;
         });
       });
