@@ -9,6 +9,7 @@ import { Courses } from 'src/contract';
 export class ProfilePage implements OnInit {
   newTeams: Team[];
   newCourses: Courses[];
+  ongoingCourses: Courses[];
 
   constructor() { }
 
@@ -45,7 +46,18 @@ export class ProfilePage implements OnInit {
         term: "19 Haziran - 3 Temmuz 2019"
       }
     ]
-
+    this.ongoingCourses = [
+      {
+        title: 'İngilizce Eğitimi',
+        completed_at: '21 Haziran 2019',
+        logo: 'paper-plane'
+      },
+      {
+        title: 'Sörf Eğitimi',
+        completed_at: '15 Eylül 2019',
+        logo: 'cloudy-night'
+      },
+    ]
     this.newCourses = [
       {
         title: 'Powerpoint Eğitimi',

@@ -16,7 +16,7 @@
       <!-- seviye avatarı -->
 
       <div style="text-align:center">
-        <ion-label color="primary">Seviyen: 3</ion-label><br>
+        <ion-label color="primary">Seviyen: 4</ion-label><br>
         <ion-label color="primary">Bir sonraki seviye için</ion-label>
       </div>
       <ion-progress-bar color="tertiary" value="0.5" buffer="0.4" class="level-progress"></ion-progress-bar>
@@ -57,7 +57,7 @@
             <!--Departman-->
             <ion-col size="25%">
               <ion-row class="ion-justify-content-evenly">
-                <ion-badge color="secondary">Toplama</ion-badge>
+                <ion-badge color="secondary">Paketleme</ion-badge>
               </ion-row>
               <ion-row class="ion-justify-content-evenly">
                 <div class="badge-text">
@@ -79,8 +79,9 @@
   </ion-card>
 <ion-card class="nes-container is-rounded no-padding card" color="light">
     <div class="bio" >
+        Efsanem: Gonca Dalgıç<br>
         Hobilerim: Futbol, basketbol<br>
-        Hayalim: Amerika'ya gitmek<br>
+        Hayalim: İngilizce öğrenmek<br>
       </div>
       <div class="bio">
         Hedeflerim:
@@ -231,8 +232,30 @@
       </ion-slide>
     </ion-slides>
   </ion-card>
-  <!--tamamladığı eğitimler-->
+  <!--devam eden eğitimler-->
   <ion-card class="nes-container is-rounded no-padding card" color="light">
+      <ion-card-title class="card-title">Devam Eden Eğitimler</ion-card-title>
+  
+      <ion-card-subtitle class="card-title">Eğitimlerini görmek için kaydır.</ion-card-subtitle>
+      <ion-slides>
+        <ion-slide *ngFor="let new of ongoingCourses">
+  
+          <ion-card class="nes-container is-rounded no-padding card" color="light">
+            <ion-item>
+              <ion-thumbnail slot="start">
+                <ion-icon [name]="new.logo"></ion-icon>
+              </ion-thumbnail>
+              <div class="mt-16">
+                <ion-label>{{ new.title }}</ion-label>
+                <p class="secondary-label">Başlama Tarihi {{ new.completed_at }}</p>
+              </div>
+            </ion-item>
+          </ion-card>
+        </ion-slide>
+      </ion-slides>
+    </ion-card>
+<!--tamamladığı eğitimler-->
+<ion-card class="nes-container is-rounded no-padding card" color="light">
     <ion-card-title class="card-title">Tamamladığın Eğitimler</ion-card-title>
 
     <ion-card-subtitle class="card-title">Eğitimlerini görmek için kaydır.</ion-card-subtitle>
@@ -253,7 +276,7 @@
       </ion-slide>
     </ion-slides>
   </ion-card>
-
+  
   <ion-card class="nes-container is-rounded no-padding card" color="light">
     <ion-card-header>Muhtarlık</ion-card-header>
     <!--vardiyası ve haftalık izinleri, fazla mesai, yıllık izin bakiyesi, avans talebi -->
