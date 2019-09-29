@@ -1,0 +1,47 @@
+.swiper-slide {
+    flex-direction: column;
+    
+    align-items: center;
+    vertical-align: center;
+    display: flex;
+justify-content: center;
+  }
+
+  .card{
+    height: 50%;
+  }
+
+  .dc {
+      display: flex;
+      width: 100%;
+
+      justify-content: space-evenly;
+  }
+
+  ion-icon {
+    font-size: 40px; //Preferred size here
+  }
+  
+  .mt-16 {
+    margin-top: 16px;
+  }
+  
+  .ev_cl {
+    max-height:200px;
+    width: auto;
+    align-self: center;
+}
+.img-container {
+    width: 100%;
+    place-content: center;
+    display:flex;
+}
+.item-avatar {
+    margin: 0 auto;
+    text-align: center;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100px !important; //any size
+    max-height: 100px !important; //any size
+    margin-bottom: 10px !important;
+  }

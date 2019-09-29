@@ -8,6 +8,7 @@ export { User } from './models/user.model';
 export { Team } from './models/team.model';
 export { Courses } from './models/courses.model';
 export { Training } from './models/training.model';
+export { Step } from './models/steps.model';
 
 export { ChangeEmailRequest } from './request/change-email-request.model';
 export { ChangePasswordRequest } from './request/change-password-request.model';
