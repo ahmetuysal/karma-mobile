@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Step } from 'src/contract';
+import { ModalController } from '@ionic/angular';
 
 @Component({
   selector: 'app-journey',
@@ -8,7 +9,7 @@ import { Step } from 'src/contract';
 })
 export class JourneyPage implements OnInit {
   Steps: Step[];
-  constructor() {}
+  constructor(private readonly modalController: ModalController) {}
 
   ngOnInit() {
     this.Steps = [
@@ -37,5 +38,9 @@ export class JourneyPage implements OnInit {
         progress: 4 / 12
       }
     ];
+  }
+
+  back() {
+    this.modalController.dismiss();
   }
 }

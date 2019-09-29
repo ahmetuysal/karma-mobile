@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { EmotionPage } from '../emotion/emotion.page';
 import { TrainingPage } from '../training/training.page';
+import { JourneyPage } from '../journey/journey.page';
 
 @Component({
   selector: 'app-home',
@@ -26,6 +27,12 @@ export class HomePage implements OnInit {
             (result.data || { feeling: null }).feeling ||
             'Köyde havalar çok güzel!';
           this.balloon.nativeElement.innerText = feeling;
+          setTimeout(() => {
+            const journey = this.modalController.create({
+              component: JourneyPage
+            });
+            journey.then(j => j.present());
+          }, 1000);
         });
       });
     }, 2000);
